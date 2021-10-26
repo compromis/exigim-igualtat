@@ -92,7 +92,7 @@ import { CompromisLogo, BCard } from '@compromis/blobby'
 </template>
 
 <style lang="scss">
-@import './node_modules/@compromis/blobby/scss/blobby';
+@import '@compromis/blobby/scss/blobby';
 
 .card-grid {
   display: grid;
