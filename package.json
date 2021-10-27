@@ -9,7 +9,7 @@
     "nuxt3": "latest"
   },
   "dependencies": {
-    "@compromis/blobby": "../blobby",
+    "@compromis/blobby": "^1.0.3",
     "rellax": "^1.12.1",
     "sass": "^1.43.3",
     "sass-loader": "^12.2.0"

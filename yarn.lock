@@ -262,8 +262,10 @@
   dependencies:
     mime "^2.5.2"
 
-"@compromis/blobby@../blobby":
-  version "1.0.2"
+"@compromis/blobby@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@compromis/blobby/-/blobby-1.0.3.tgz#84bcf36a826b65cdd927ee8c46b00a2aebc5bedb"
+  integrity sha512-UJXYGDTLHyeXnc245BfpJfbCW3+V8qdLFSKavx8I8tGrTvm9YwzbzYxcEVAYCQZWX/ze39LbReonTNixSSGz5w==
   dependencies:
     bootstrap "^5.1.3"
 
