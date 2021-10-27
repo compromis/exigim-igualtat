@@ -1,15 +1,38 @@
 <script setup>
-import { onMounted } from 'vue'
-import Rellax from 'rellax'
+import { ref, onMounted } from 'vue'
 import { CompromisLogo, BCard, BButton, BFooter } from '@compromis/blobby'
+import Rellax from 'rellax'
+import thumbnail from './assets/images/thumbnail.png'
 
 onMounted(() => {
   const rellax = new Rellax('.rellax')
 })
+
+const title = ref("Exigim igualtat, exigim respecte - Compromís")
+const description = ref("Els valencians i valencianes som els únics que paguem a territoris més rics que nosaltres. Diners que haurien d’anar a sanitat, educació, serveis socials o ocupació. La culpa és d’un sistema de finançament injust caducat des de 2014 i que els diferents governs espanyols no han volgut reformar.")
+const image = ref(thumbnail)
 </script>
 
 <template>
   <div class="container">
+    <Head lang="ca">
+      <Title>{{ title }}</Title>
+      <Meta name="description" :content="description" />
+      <Meta name="keywords" content="compromis, finançament just, exigim respecte, exigim igualtat, rodalies, finanación justa, cercanías, dependencia, valencia" />
+      <Meta name="robots" content="index, follow" />
+
+      <Meta name="og:locale" content="ca" />
+      <Meta name="og:type" content="website" />
+      <Meta name="og:description" :content="description" />
+      <Meta name="og:image" :content="image" />
+      <Meta name="og:url" content="https://exigimigualtat.compromis.net" />
+      <Meta name="twitter:site" content="@compromis" />
+      <Meta name="twitter:card" content="summary_large_image" />
+      <Meta name="twitter:title" :content="title" />
+      <Meta name="twitter:description" :content="description" />
+      <Meta name="twitter:image" :content="image" />
+      <Meta name="twitter:url" content="https://exigimigualtat.compromis.net" />
+    </Head>
     <header class="header">
       <a href="https://compromis.net" target="_blank" class="compromis-logo">
         <compromis-logo />
