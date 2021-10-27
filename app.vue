@@ -148,6 +148,7 @@ const image = ref(thumbnail)
             millorar el servei i que transferisquen la seua gestió
             als valencians i valencianes.
           </p>
+          <p>Per a més informació, visita <a href="https://trencancelado.com" target="_blank">trencancelado.com</a></p>
         </b-card>
       </section>
 
@@ -165,6 +166,10 @@ const image = ref(thumbnail)
 
 <style lang="scss">
 @import '@compromis/blobby/scss/blobby';
+
+body {
+  font-weight: 500;
+}
 
 .card-grid {
   display: grid;
@@ -190,7 +195,7 @@ const image = ref(thumbnail)
     }
 
     h2 {
-      font-weight: 600;
+      font-weight: 700;
       width: fit-content;
       letter-spacing: -.02em;
       padding-bottom: 1rem;
@@ -295,7 +300,8 @@ const image = ref(thumbnail)
 }
 
 .sign {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .button-primary {
