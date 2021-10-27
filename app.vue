@@ -133,7 +133,7 @@ onMounted(() => {
           Signa per a exigir igualtat,<br>
           signa per a exigir respecte
         </h2>
-        <iframe class="rounded overflow-hidden border" src="https://docs.google.com/forms/d/e/1FAIpQLScZ40VmBLNm_Bxl9WYFiNzCkeqMIV6WxY8l9mMYlNqgzQa6wA/viewform?embedded=true" width="100%" height="1218" frameborder="0" marginheight="0" marginwidth="0">S&#39;està carregant…</iframe>
+        <iframe class="rounded overflow-hidden" src="https://docs.google.com/forms/d/e/1FAIpQLSegWMSeVJp6AZ6tVzlTjuDZjFno9aw--KDHfFKn0MUXN-wl3A/viewform?embedded=true" width="100%" height="1492" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </section>
     </main>
     <b-footer campaign="Exigim igualtat, exigim respecte!" />
