@@ -1,110 +1,196 @@
 <script setup>
-import { CompromisLogo, BCard } from '@compromis/blobby'
+import { onMounted } from 'vue'
+import Rellax from 'rellax'
+import { CompromisLogo, BCard, BButton, BFooter } from '@compromis/blobby'
+
+onMounted(() => {
+  const rellax = new Rellax('.rellax')
+})
 </script>
 
 <template>
   <div class="container">
-    <a href="https://compromis.net" target="_blank" class="compromis-logo">
-      <compromis-logo />
-    </a>
+    <header class="header">
+      <a href="https://compromis.net" target="_blank" class="compromis-logo">
+        <compromis-logo />
+        <span class="visually-hidden">Compromís</span>
+      </a>
 
-    <h1 class="site-title text-6xl">
-      Exigim igualtat,<br>
-      exigim respecte!
-    </h1>
+      <h1 class="site-title text-6xl">
+        Exigim<br class="d-md-none" /> igualtat,<br>
+        exigim<br class="d-md-none" /> respecte!
+      </h1>
 
-    <div class="card-grid">
-      <b-card padding class="text-lg">
-        <h2 class="text-gradient from-purple to-blue">Exigim inversions suficients</h2>
-        <p>
-          Els valencians i valencianes hem rebut menys
-          inversions de l’Estat de les que ens toquen segons la
-          nostra població. A més, de les inversions
-          pressupostades només s’acaben executant una
-          xicoteta part.
-        </p>
-        <p>
-          Per això exigim inversions suficients i que
-          s’executen les inversions previstes. Inversions com
-          la connexió en rodalies de l’aeroport de l’Altet, el
-          túnel passant ferroviari de València, el cost de les
-          dessaladores de les comarques de Castelló o la
-          connexió València-Alacant pel tren de la costa.
-        </p>
-      </b-card>
+      <b-button href="#sign">
+        <img src="~assets/images/pencil.svg" alt="">
+        Signa
+      </b-button>
+    </header>
 
-      <b-card padding class="text-lg">
-        <h2 class="text-gradient">Exigim Finançament Just</h2>
-        <p>
-          Els valencians i valencianes som els únics que
-          paguem a territoris més rics que nosaltres. Diners
-          que haurien d’anar a sanitat, educació, serveis
-          socials o ocupació. La culpa és d’un sistema de
-          finançament injust caducat des de 2014 i que els
-          diferents governs espanyols no han volgut
-          reformar.
-        </p>
-        <p>
-          Per això exigim la reforma immediata del sistema
-          de finançament i la posada en marxa d’un
-          mecanisme que ens compense i garantisca que
-          tenim la mateixa capacitat de finançar els serveis
-          públics que altres territoris
-        </p>
-      </b-card>
+    <main>
+      <section class="card-grid">
+        <b-card as="article" padding class="text-xl odd">
+          <div class="icon calculator rellax" data-rellax-speed="1.15">
+            <img src="~assets/images/calculator.webp" alt="">
+          </div>
+          <h2 class="text-gradient from-purple to-blue">Exigim finançament just</h2>
+          <p>
+            Els valencians i valencianes som els únics que
+            paguem a territoris més rics que nosaltres. Diners
+            que haurien d’anar a sanitat, educació, serveis
+            socials o ocupació. La culpa és d’un sistema de
+            finançament injust caducat des de 2014 i que els
+            diferents governs espanyols no han volgut
+            reformar.
+          </p>
+          <p>
+            Per això exigim la reforma immediata del sistema
+            de finançament i la posada en marxa d’un
+            mecanisme que ens compense i garantisca que
+            tenim la mateixa capacitat de finançar els serveis
+            públics que altres territoris
+          </p>
+        </b-card>
 
-      <b-card padding class="text-lg">
-        <h2 class="text-gradient from-magenta to-plum">Exigim Rodalies Dignes</h2>
-        <p>
-          La falta d’inversió i la nefasta gestió en el servei ha
-          provocat que les rodalies valencianes siguen líders
-          en retards i cancel·lacions. Si vas en tren mai saps
-          quan arribaràs.
-        </p>
-        <p>
-          Per això exigim un pla de xoc amb inversions per a
-          millorar el servei i que transferisquen la seua gestió
-          als valencians i valencianes.
-        </p>
-      </b-card>
+        <b-card as="article" padding class="text-xl even">
+          <div class="icon piggy rellax" data-rellax-speed="1">
+            <img src="~assets/images/piggy.webp" alt="">
+          </div>
+          <h2 class="text-gradient">Exigim inversions suficients</h2>
+          <p>
+            Els valencians i valencianes hem rebut menys
+            inversions de l’Estat de les que ens toquen segons la
+            nostra població. A més, de les inversions
+            pressupostades només s’acaben executant una
+            xicoteta part.
+          </p>
+          <p>
+            Per això exigim inversions suficients i que
+            s’executen les inversions previstes. Inversions com
+            la connexió en rodalies de l’aeroport de l’Altet, el
+            túnel passant ferroviari de València, el cost de les
+            dessaladores de les comarques de Castelló o la
+            connexió València-Alacant pel tren de la costa.
+          </p>
+        </b-card>
 
-      <b-card padding class="text-lg">
-        <div class="icon">👵</div>
-        <h2>Exigim diners per a la dependència</h2>
-        <p>
-          La Llei marca que l’Estat ha de pagar la meitat del
-          cost de les polítiques de dependència, però
-          actualment només arriba al 16%. La resta l’ha de
-          posar la Generalitat.
-        </p>
-        <p>
-          Per això exigim que l’Estat complisca la llei i aporte
-          els 700 milions d’euros que falten per a continuar
-          millorant l’atenció a les persones en situació de
-          dependència.
-        </p>
-      </b-card>
-    </div>
+        <b-card as="article" padding class="text-xl odd">
+          <div class="icon heart rellax" data-rellax-speed="1.25">
+            <img src="~assets/images/heart.webp" alt="">
+          </div>
+          <h2 class="text-gradient from-magenta to-plum">
+            Exigim diners per a la dependència
+          </h2>
+          <p>
+            La Llei marca que l’Estat ha de pagar la meitat del
+            cost de les polítiques de dependència, però
+            actualment només arriba al 16%. La resta l’ha de
+            posar la Generalitat.
+          </p>
+          <p>
+            Per això exigim que l’Estat complisca la llei i aporte
+            els 700 milions d’euros que falten per a continuar
+            millorant l’atenció a les persones en situació de
+            dependència.
+          </p>
+        </b-card>
 
-    <h2>Signa per a exigir igualtat, signa per a exigir respecte</h2>
-    <iframe></iframe>
+        <b-card as="article" padding class="text-xl even">
+          <div class="icon crayons rellax" data-rellax-speed="0.75">
+            <img src="~assets/images/crayons.webp" alt="">
+          </div>
+          <h2 class="text-gradient from-purple to-blue">Exigim que paguen el que ens deuen</h2>
+          <p>
+            L’Estat deu als valencians i valencianes 26.000 milions d’euros.
+            Un deute que ens ofega: el pagament del deute és la conselleria
+            amb més pressupost de la Generalitat, diners que no podem posar en centres de salut,
+            escoles o residències. Per això exigim el pagament del deute històric
+            de l’Estat amb els valencians i valencianes, tal i com s’ha fet amb altres territoris.
+          </p>
+        </b-card>
+
+        <b-card as="article" padding class="text-xl odd">
+          <div class="icon train rellax" data-rellax-speed="0.75">
+            <img src="~assets/images/train.webp" alt="">
+          </div>
+          <h2 class="text-gradient">Exigim rodalies dignes</h2>
+          <p>
+            La falta d’inversió i la nefasta gestió en el servei ha
+            provocat que les rodalies valencianes siguen líders
+            en retards i cancel·lacions. Si vas en tren mai saps
+            quan arribaràs.
+          </p>
+          <p>
+            Per això exigim un pla de xoc amb inversions per a
+            millorar el servei i que transferisquen la seua gestió
+            als valencians i valencianes.
+          </p>
+        </b-card>
+      </section>
+
+      <section aria-labelledby="sign">
+        <h2 class="sign" id="sign">
+          Signa per a exigir igualtat,<br>
+          signa per a exigir respecte
+        </h2>
+        <iframe class="rounded overflow-hidden border" src="https://docs.google.com/forms/d/e/1FAIpQLScZ40VmBLNm_Bxl9WYFiNzCkeqMIV6WxY8l9mMYlNqgzQa6wA/viewform?embedded=true" width="100%" height="1218" frameborder="0" marginheight="0" marginwidth="0">S&#39;està carregant…</iframe>
+      </section>
+    </main>
+    <b-footer campaign="Exigim igualtat, exigim respecte!" />
   </div>
 </template>
 
 <style lang="scss">
-@import './node_modules/@compromis/blobby/scss/blobby';
+@import '@compromis/blobby/scss/blobby';
 
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 3.5rem;
+  margin-top: 2rem;
 
   .card {
     position: relative;
+    min-height: 21rem;
+    display: flex;
+    border-radius: 1.5rem !important;
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      flex-grow: 1;
+    }
+
+    &.card-padded {
+      padding: 2.25rem;
+    }
 
     h2 {
       font-weight: 600;
       width: fit-content;
+      letter-spacing: -.02em;
+      padding-bottom: 1rem;
+      margin-bottom: auto;
+      font-size: 2.25rem;
+    }
+
+    p {
+      max-width: 50ch;
+    }
+
+    &.even {
+      text-align: right;
+      padding-left: 200px;
+
+      h2,
+      p {
+        margin-left: auto;
+      }
+    }
+
+    &.odd {
+      padding-right: 200px;
     }
   }
 
@@ -114,25 +200,102 @@ import { CompromisLogo, BCard } from '@compromis/blobby'
 
   .icon {
     position: absolute;
-    top: -2rem;
-    right: -2rem;
-    font-size: 8rem;
+    top: 55%;
+
+    img {
+      width: 200px;
+      transform: translateY(-50%);
+    }
+
+    &.calculator {
+      right: -2rem;
+    }
+
+    &.piggy {
+      left: -4rem;
+
+      img {
+        width: 240px;
+      }
+    }
+
+    &.heart {
+      right: -2rem;
+
+      img {
+        transform: translateY(-50%) scaleX(-1);
+      }
+    }
+
+    &.crayons {
+      left: -3rem;
+      top: 70%;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    &.train {
+      top: auto;
+      right: -5rem;
+      bottom: -6rem;
+
+      img {
+        width: 340px;
+        transform: none;
+      }
+    }
   }
 }
 
 .container {
   padding: 2rem;
+  max-width: 1000px;
 }
 
-.site-title {
-  font-weight: 500;
-  padding-bottom: 1rem;
-  line-height: 1.1;
+.header {
+  .compromis-logo {
+    margin-bottom: 3rem;
+
+    svg {
+      width: 200px;
+    }
+  }
+
+  .site-title {
+    font-weight: 500;
+    padding-bottom: 1rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
 }
 
-.compromis-logo {
-  svg {
-    width: 200px;
+.sign {
+  margin-top: 3rem;
+}
+
+.button-primary {
+  display: inline-flex;
+  background: $gradient-primary;
+  color: $white;
+  margin-bottom: 2rem;
+  padding: .75em 2em;
+  border-radius: 2rem;
+  font-size: $text-xl;
+  transition: .2s ease;
+  align-items: center;
+
+  img {
+    height: 1em;
+    margin-right: .5em;
+  }
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    box-shadow: $shadow-raised;
+    transform: translateY(-.2em);
   }
 }
 
@@ -150,5 +313,55 @@ import { CompromisLogo, BCard } from '@compromis/blobby'
 
 .to-plum {
   --gradient-end: #90298b;
+}
+
+@include media-breakpoint-down(md) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    .site-title {
+      font-size: 3.75rem !important;
+    }
+  }
+
+  .card-grid {
+    margin-top: 3rem;
+    gap: 6rem;
+
+    .card {
+      &.card-padded {
+        padding: 120px 1.5rem 1.5rem;
+      }
+
+      &.odd {
+        padding-right: 1.5rem;
+      }
+
+      &.even {
+        padding-left: 1.5rem;
+        text-align: left;
+
+        h2 {
+          margin-left: 0;
+        }
+      }
+
+      .icon {
+        top: -2.5rem;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, 0) !important;
+
+        img {
+          transform: none;
+          width: auto;
+          height: 150px;
+        }
+      }
+    }
+  }
 }
 </style>
