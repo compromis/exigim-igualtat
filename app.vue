@@ -157,7 +157,7 @@ const image = ref(thumbnail)
           Signa per a exigir igualtat,<br>
           signa per a exigir respecte
         </h2>
-        <iframe class="form rounded overflow-hidden" src="https://docs.google.com/forms/d/e/1FAIpQLSegWMSeVJp6AZ6tVzlTjuDZjFno9aw--KDHfFKn0MUXN-wl3A/viewform?embedded=true" width="100%" height="1592" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe class="form rounded overflow-hidden" src="https://docs.google.com/forms/d/e/1FAIpQLSegWMSeVJp6AZ6tVzlTjuDZjFno9aw--KDHfFKn0MUXN-wl3A/viewform?embedded=true" width="100%" height="2300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </section>
     </main>
     <b-footer campaign="Exigim igualtat, exigim respecte!" />
@@ -394,7 +394,7 @@ body {
   }
 
   .form {
-    height: 2200px;
+    height: 2900px;
   }
 }
 </style>
