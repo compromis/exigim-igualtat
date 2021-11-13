@@ -10,7 +10,7 @@ onMounted(() => {
 
 const title = ref("Exigim igualtat, exigim respecte - Compromís")
 const description = ref("Els valencians i valencianes som els únics que paguem a territoris més rics que nosaltres. Diners que haurien d’anar a sanitat, educació, serveis socials o ocupació. La culpa és d’un sistema de finançament injust caducat des de 2014 i que els diferents governs espanyols no han volgut reformar.")
-const image = ref(thumbnail)
+const image = ref('https://exigimigualtat.compromis.net' + thumbnail)
 </script>
 
 <template>
